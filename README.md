@@ -1,3 +1,21 @@
+# Práctica 20
+
+## Ejercicio 1
+
+¿Qué diferencia hay entre un signal y un computed, y cuál se parece a useState y cuál a useMemo?
+
+Un signal guarda un valor que nosotros cambiamos, por ejemplo la categoría. Un computed se calcula solo a partir de otros signals y no se puede cambiar a mano, por ejemplo las clases visibles. El signal se parece a useState y el computed se parece a useMemo.
+
+## Ejercicio 2
+
+¿Qué pasa si el filtro hace new Catalogo() en lugar de inject(Catalogo)?
+
+Con new Catalogo() el filtro crea su propia copia del servicio, separada de la del tablero. Entonces, al elegir una categoría, solo cambia en la copia del filtro y el tablero no se filtra. Con inject(Catalogo) los dos usan el mismo servicio y comparten los datos.
+
+
+
+# Práctica 19
+
 ## Ejercicio 1
 **¿Qué archivo de Angular hace el papel de `main.tsx`, de `App.tsx` y de `vite.config.ts`?**
 
